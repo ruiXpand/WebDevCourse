@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="New user" />
+        <link rel="stylesheet" href="bs/css/bootstrap.css" />
+        <link rel="stylesheet" href="styles/DGEstE_style.css" />
+        <title>DGEstE - Detalhe do utilizador</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md components">
+            <div class="container-fluid">
+                <img class="logo" src="images/logo.svg" alt="Logo" />
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <img
+                        id="mobile-cta"
+                        class="mobile-menu"
+                        src="images/menu.svg"
+                        alt="Open Navigation"
+                    />
+                </button>
+
+                <div class="full-nav collapse navbar-collapse" id="navbarNav">
+                    <ul class="primary-nav">
+                        <li class="current">
+                            <a href="#">Página inicial</a>
+                        </li>
+                        <li>
+                            <a href="#">Gestão de utilizadores</a>
+                        </li>
+                        <li>
+                            <a href="#">Direções de serviço</a>
+                        </li>
+                        <li>
+                            <a href="#">Agendamentos</a>
+                        </li>
+                    </ul>
+                    <ul class="secondary-nav me-2">
+                        <li>
+                            <img
+                                id="navBar-user-photo"
+                                class="navBar-user-photo me-3"
+                                src="images/user_male.svg"
+                                alt="User small photo"
+                            />
+                        </li>
+                        <li class="navBar-user-name me-2">
+                            <a>José Silva</a>
+                        </li>
+                        <li>
+                            <img
+                                id="navBar-user-settings-cta"
+                                class="navBar-user-settings-cta me-4"
+                                src="images/dropdown_arrow.svg"
+                                alt="User settings icon"
+                            />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="row align-items-center">
+                <div class="col-11">
+                    <h2>
+                        Detalhe do utilizador
+                        <button class="btn general-btn">
+                            <img src="images/edit.svg" alt="Delete icon" />
+                            <span>Editar dados</span>
+                        </button>
+                    </h2>
+                </div>
+                <div class="col-1">
+                    <img
+                        class="float-end"
+                        src="images/close.svg"
+                        alt="Close icon"
+                    />
+                </div>
+            </div>
+
+            <form action="">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" />
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="name">Email</label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <label for="name">Direcções de Serviço</label>
+                        <input type="text" id="dirServico" name="dirServico" />
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="name">Unidade de serviço</label>
+                        <input type="text" id="uniServico" name="uniServico" />
+                    </div>
+                </div>
+                <h4>Assuntos</h4>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <input type="text" id="subject" name="subject" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="general-btn float-end">
+                            <img src="images/delete.svg" alt="Delete icon" />
+                            <span>Remover</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <input type="text" id="subject" name="subject" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="general-btn float-end">
+                            <img src="images/delete.svg" alt="Delete icon" />
+                            <span>Remover</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <input type="text" id="subject" name="subject" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="general-btn float-end">
+                            <img src="images/delete.svg" alt="Delete icon" />
+                            <span>Remover</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <input type="text" id="subject" name="subject" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="general-btn float-end">
+                            <img src="images/delete.svg" alt="Delete icon" />
+                            <span>Remover</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <script src="bs/js/bootstrap.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
