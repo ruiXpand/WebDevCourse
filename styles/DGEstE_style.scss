@@ -19,8 +19,8 @@ body {
 
 .container-fluid {
     padding: 0 !important;
-    margin-left: 55px !important;
-    margin-right: 55px !important;
+    margin-left: 20px !important;
+    margin-right: 10px !important;
     z-index: 1;
 }
 
@@ -38,6 +38,7 @@ nav {
         margin-top: 4em;
 
         li {
+            margin-right: 20px;
             padding-bottom: 1em;
             align-content: right;
             text-align: end;
@@ -63,7 +64,7 @@ nav {
     .secondary-nav {
         float: right;
         position: absolute;
-        right: 1.5em;
+        right: 0;
         margin-top: 1em;
 
         li {
@@ -92,22 +93,23 @@ ul {
 }
 
 section {
-    padding: 35px 55px 35px 55px;
+    padding: 35px 20px 35px 20px;
 }
 
 h2 {
     font-size: 26px;
     font-weight: bold;
+    display: flex;
+
+    .btn {
+        margin-right: 40%;
+    }
 }
 
 h4 {
     margin-top: 70px;
     font-size: 20px;
     color: var(--fields-title-color);
-}
-
-.btn {
-    margin-left: 20px;
 }
 
 .general-btn {
@@ -171,7 +173,54 @@ input[type="submit"] {
     }
 }
 
+@media only screen and (min-width: 410px) {
+    h2 {
+        font-size: 26px;
+        font-weight: bold;
+        display: initial;
+
+        .general-btn {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 503px) {
+    .container-fluid {
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+
+    nav {
+        .primary-nav {
+            li {
+                margin-right: 20px;
+            }
+        }
+
+        .secondary-nav {
+            right: 1.5em;
+        }
+    }
+
+    h2 {
+        display: initial;
+
+        .general-btn {
+            margin-right: 0;
+        }
+    }
+
+    section {
+        padding: 35px 40px 35px 40px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+    .container-fluid {
+        margin-left: 55px !important;
+        margin-right: 55px !important;
+    }
     nav {
         height: 80px;
         .primary-nav {
@@ -182,7 +231,7 @@ input[type="submit"] {
             display: flex;
 
             li {
-                padding-right: 1em;
+                margin-right: 20px;
                 text-align: left;
                 display: block;
                 a {
@@ -231,18 +280,23 @@ input[type="submit"] {
             display: inline-flex;
         }
     }
+
+    section {
+        padding: 35px 55px 35px 55px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
     nav {
         .primary-nav {
-            justify-content: space-between;
-            margin-left: 10% !important;
             margin-right: 20% !important;
+
             li {
+                margin-right: 60px;
                 a {
                     text-decoration: none;
                     text-align: left;
+                    display: block;
 
                     &:hover:after {
                         margin-top: -1em;
@@ -287,7 +341,9 @@ input[type="submit"] {
 @media only screen and (min-width: 992px) {
     nav {
         .primary-nav {
-            li {
+            li:not(:last-child) {
+                margin-right: 60px;
+
                 a {
                     &:hover:after {
                         bottom: -70%;
